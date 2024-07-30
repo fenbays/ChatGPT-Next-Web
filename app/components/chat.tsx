@@ -569,7 +569,7 @@ export function ChatActions(props: {
       {/*  icon={<MaskIcon />}*/}
       {/*/>*/}
 
-      <ChatAction
+      {/* <ChatAction
         text={Locale.Chat.InputActions.Clear}
         icon={<BreakIcon />}
         onClick={() => {
@@ -582,7 +582,7 @@ export function ChatActions(props: {
             }
           });
         }}
-      />
+      /> */}
 
       {/*<ChatAction*/}
       {/*  onClick={() => setShowModelSelector(true)}*/}
@@ -1296,7 +1296,7 @@ function _Chat() {
           </div>
         </div>
         <div className="window-actions">
-          {!isMobileScreen && (
+          {/* {!isMobileScreen && (
             <div className="window-action-button">
               <IconButton
                 icon={<RenameIcon />}
@@ -1304,7 +1304,7 @@ function _Chat() {
                 onClick={() => setIsEditingMessage(true)}
               />
             </div>
-          )}
+          )} */}
           <div className="window-action-button">
             <IconButton
               icon={<ExportIcon />}
@@ -1368,7 +1368,7 @@ function _Chat() {
                 <div className={styles["chat-message-container"]}>
                   <div className={styles["chat-message-header"]}>
                     <div className={styles["chat-message-avatar"]}>
-                      <div className={styles["chat-message-edit"]}>
+                      {/* <div className={styles["chat-message-edit"]}>
                         <IconButton
                           icon={<EditIcon />}
                           onClick={async () => {
@@ -1401,7 +1401,7 @@ function _Chat() {
                             });
                           }}
                         ></IconButton>
-                      </div>
+                      </div> */}
                       {isUser ? (
                         <Avatar avatar={config.avatar} />
                       ) : (
@@ -1431,7 +1431,7 @@ function _Chat() {
                             />
                           ) : (
                             <>
-                              <ChatAction
+                              {/* <ChatAction
                                 text={Locale.Chat.Actions.Retry}
                                 icon={<ResetIcon />}
                                 onClick={() => onResend(message)}
@@ -1447,7 +1447,7 @@ function _Chat() {
                                 text={Locale.Chat.Actions.Pin}
                                 icon={<PinIcon />}
                                 onClick={() => onPinMessage(message)}
-                              />
+                              /> */}
                               <ChatAction
                                 text={Locale.Chat.Actions.Copy}
                                 icon={<CopyIcon />}
