@@ -45,13 +45,13 @@ const DEFAULT_STABILITY_URL = isApp
 
 const DEFAULT_ACCESS_STATE = {
   accessCode: "",
-  useCustomConfig: false,
+  useCustomConfig: true,
 
   provider: ServiceProvider.OpenAI,
 
   // openai
   openaiUrl: DEFAULT_OPENAI_URL,
-  openaiApiKey: "",
+  openaiApiKey: "sk-hbRPCcdBP1X90ZtU6c133c32248a4840Ad9bC7C837B92082",
 
   // azure
   azureUrl: "",
@@ -87,7 +87,7 @@ const DEFAULT_ACCESS_STATE = {
   stabilityApiKey: "",
 
   // server config
-  needCode: true,
+  needCode: false,
   hideUserApiKey: false,
   hideBalanceQuery: false,
   disableGPT4: false,
@@ -165,7 +165,7 @@ export const useAccessStore = createPersistStore(
           // Set default model from env request
           let defaultModel = res.defaultModel ?? "";
           DEFAULT_CONFIG.modelConfig.model =
-            defaultModel !== "" ? defaultModel : "gpt-3.5-turbo";
+            defaultModel !== "" ? defaultModel : "knowledge-chat";
           return res;
         })
         .then((res: DangerConfig) => {

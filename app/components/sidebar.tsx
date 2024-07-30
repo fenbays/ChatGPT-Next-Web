@@ -12,6 +12,7 @@ import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import DragIcon from "../icons/drag.svg";
 import DiscoveryIcon from "../icons/discovery.svg";
+import DotIcon from "../icons/dot.svg";
 
 import Locale from "../locales";
 
@@ -225,7 +226,7 @@ export function SideBar(props: { className?: string }) {
       <SideBarHeader
         title="DotChat"
         subTitle="您的智能助手."
-        logo={<ChatGptIcon />}
+        logo={<DotIcon />}
       >
         <div className={styles["sidebar-header-bar"]}>
           <IconButton
@@ -241,13 +242,13 @@ export function SideBar(props: { className?: string }) {
             }}
             shadow
           />
-          <IconButton
-            icon={<DiscoveryIcon />}
-            text={shouldNarrow ? undefined : Locale.Discovery.Name}
-            className={styles["sidebar-bar-button"]}
-            onClick={() => setShowPluginSelector(true)}
-            shadow
-          />
+          {/*<IconButton*/}
+          {/*  icon={<DiscoveryIcon />}*/}
+          {/*  text={shouldNarrow ? undefined : Locale.Discovery.Name}*/}
+          {/*  className={styles["sidebar-bar-button"]}*/}
+          {/*  onClick={() => setShowPluginSelector(true)}*/}
+          {/*  shadow*/}
+          {/*/>*/}
         </div>
         {showPluginSelector && (
           <Selector
@@ -298,11 +299,11 @@ export function SideBar(props: { className?: string }) {
                 <IconButton icon={<SettingsIcon />} shadow />
               </Link>
             </div>
-            <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-                <IconButton icon={<GithubIcon />} shadow />
-              </a>
-            </div>
+            {/*<div className={styles["sidebar-action"]}>*/}
+            {/*  <a href={REPO_URL} target="_blank" rel="noopener noreferrer">*/}
+            {/*    <IconButton icon={<GithubIcon />} shadow />*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </>
         }
         secondaryAction={

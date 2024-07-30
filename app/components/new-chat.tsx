@@ -87,6 +87,7 @@ export function NewChat() {
 
   const startChat = (mask?: Mask) => {
     setTimeout(() => {
+      console.log("start chat mask: " + mask);
       chatStore.newSession(mask);
       navigate(Path.Chat);
     }, 10);
@@ -96,6 +97,7 @@ export function NewChat() {
     mask: (id) => {
       try {
         const mask = maskStore.get(id) ?? BUILTIN_MASK_STORE.get(id);
+        console.log("useCommand mask: " + mask);
         startChat(mask ?? undefined);
       } catch {
         console.error("[New Chat] failed to create chat from mask id=", id);
@@ -173,7 +175,9 @@ export function NewChat() {
               <MaskItem
                 key={index}
                 mask={mask}
-                onClick={() => startChat(mask)}
+                onClick={() => {
+                  startChat(mask);
+                }}
               />
             ))}
           </div>

@@ -8,7 +8,7 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "<a href='https://www.baidu.com'>baidu</a>访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
   },
   Auth: {
     Title: "需要密码",
@@ -434,7 +434,111 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "<a href='https://baidu.com'></a>有什么可以帮你的吗",
+    BotHello:
+      "<p>智能助手为您提供校园快捷信息查询服务。</p>\n" +
+      "\n" +
+      '<h2 tabindex="-1"># 快捷入口</h2>\n' +
+      '<p><a href="http://www.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">广大官网 | 广州大学官网<span><svg\n' +
+      '                class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"\n' +
+      '                x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="https://newmy.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">数字广大 |\n' +
+      '        广州大学的数字服务<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="https://hello.acastu.com/" target="_blank" rel="noopener noreferrer">广大灯塔 |\n' +
+      '        广大er的导航网站<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="http://mail.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">广大邮箱 |\n' +
+      '        广州大学教育邮箱(教师端)<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="http://mail.e.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">广大邮箱 |\n' +
+      '        广州大学教育邮箱(学生端)<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="http://jwxt.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">教务系统 |\n' +
+      '        直达广州大学教务系统<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="http://lib.gzhu.edu.cn/w/" target="_blank" rel="noopener noreferrer">图书馆 |\n' +
+      '        广州大学图书馆网站<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="http://yjsy.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">研究生院 |\n' +
+      '        广州大学研究生院官网<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="https://webvpn.gzhu.edu.cn" target="_blank" rel="noopener noreferrer">WebVPN |\n' +
+      '        网页访问即可登录的VPN<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a><br>\n" +
+      '    <a href="https://netcenter.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">信息与技术 |\n' +
+      '        实验中心、网络与现代教育技术中心<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"\n' +
+      '                focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15">\n' +
+      '                <path fill="currentColor"\n' +
+      '                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">\n' +
+      "                </path>\n" +
+      '                <polygon fill="currentColor"\n' +
+      '                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">\n' +
+      "                </polygon>\n" +
+      "            </svg></span></a>\n" +
+      "</p>",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,

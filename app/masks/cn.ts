@@ -3,7 +3,7 @@ import { BuiltinMask } from "./typing";
 export const CN_MASKS: BuiltinMask[] = [
   {
     avatar: "1f5a5-fe0f",
-    name: "广州大学网络服务厅",
+    name: "广州大学知识库",
     context: [
       {
         id: "mentor-0",
@@ -116,7 +116,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "SparkDesk-v1.1",
+      model: "knowledge-chat",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -142,7 +142,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "SparkDesk-v1.1",
+      model: "chat",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -174,7 +174,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "SparkDesk-v1.1",
+      model: "chat",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -194,12 +194,12 @@ export const CN_MASKS: BuiltinMask[] = [
       {
         id: "cons-0",
         role: "system",
-        content: "有什么可以帮你的吗",
+        content: "有什么可以帮你的吗?",
         date: "",
       },
     ],
     modelConfig: {
-      model: "SparkDesk-v1.1",
+      model: "chat",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,

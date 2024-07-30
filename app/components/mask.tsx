@@ -479,22 +479,22 @@ export function MaskPage() {
           </div>
 
           <div className="window-actions">
-            <div className="window-action-button">
-              <IconButton
-                icon={<DownloadIcon />}
-                bordered
-                onClick={downloadAll}
-                text={Locale.UI.Export}
-              />
-            </div>
-            <div className="window-action-button">
-              <IconButton
-                icon={<UploadIcon />}
-                text={Locale.UI.Import}
-                bordered
-                onClick={() => importFromFile()}
-              />
-            </div>
+            {/*<div className="window-action-button">*/}
+            {/*  <IconButton*/}
+            {/*    icon={<DownloadIcon />}*/}
+            {/*    bordered*/}
+            {/*    onClick={downloadAll}*/}
+            {/*    text={Locale.UI.Export}*/}
+            {/*  />*/}
+            {/*</div>*/}
+            {/*<div className="window-action-button">*/}
+            {/*  <IconButton*/}
+            {/*    icon={<UploadIcon />}*/}
+            {/*    text={Locale.UI.Import}*/}
+            {/*    bordered*/}
+            {/*    onClick={() => importFromFile()}*/}
+            {/*  />*/}
+            {/*</div>*/}
             <div className="window-action-button">
               <IconButton
                 icon={<CloseIcon />}
@@ -514,38 +514,38 @@ export function MaskPage() {
               autoFocus
               onInput={(e) => onSearch(e.currentTarget.value)}
             />
-            <Select
-              className={styles["mask-filter-lang"]}
-              value={filterLang ?? Locale.Settings.Lang.All}
-              onChange={(e) => {
-                const value = e.currentTarget.value;
-                if (value === Locale.Settings.Lang.All) {
-                  setFilterLang(undefined);
-                } else {
-                  setFilterLang(value as Lang);
-                }
-              }}
-            >
-              <option key="all" value={Locale.Settings.Lang.All}>
-                {Locale.Settings.Lang.All}
-              </option>
-              {AllLangs.map((lang) => (
-                <option value={lang} key={lang}>
-                  {ALL_LANG_OPTIONS[lang]}
-                </option>
-              ))}
-            </Select>
+            {/*<Select*/}
+            {/*  className={styles["mask-filter-lang"]}*/}
+            {/*  value={filterLang ?? Locale.Settings.Lang.All}*/}
+            {/*  onChange={(e) => {*/}
+            {/*    const value = e.currentTarget.value;*/}
+            {/*    if (value === Locale.Settings.Lang.All) {*/}
+            {/*      setFilterLang(undefined);*/}
+            {/*    } else {*/}
+            {/*      setFilterLang(value as Lang);*/}
+            {/*    }*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  <option key="all" value={Locale.Settings.Lang.All}>*/}
+            {/*    {Locale.Settings.Lang.All}*/}
+            {/*  </option>*/}
+            {/*  {AllLangs.map((lang) => (*/}
+            {/*    <option value={lang} key={lang}>*/}
+            {/*      {ALL_LANG_OPTIONS[lang]}*/}
+            {/*    </option>*/}
+            {/*  ))}*/}
+            {/*</Select>*/}
 
-            <IconButton
-              className={styles["mask-create"]}
-              icon={<AddIcon />}
-              text={Locale.Mask.Page.Create}
-              bordered
-              onClick={() => {
-                const createdMask = maskStore.create();
-                setEditingMaskId(createdMask.id);
-              }}
-            />
+            {/*<IconButton*/}
+            {/*  className={styles["mask-create"]}*/}
+            {/*  icon={<AddIcon />}*/}
+            {/*  text={Locale.Mask.Page.Create}*/}
+            {/*  bordered*/}
+            {/*  onClick={() => {*/}
+            {/*    const createdMask = maskStore.create();*/}
+            {/*    setEditingMaskId(createdMask.id);*/}
+            {/*  }}*/}
+            {/*/>*/}
           </div>
 
           <div>
@@ -573,30 +573,30 @@ export function MaskPage() {
                       navigate(Path.Chat);
                     }}
                   />
-                  {m.builtin ? (
-                    <IconButton
-                      icon={<EyeIcon />}
-                      text={Locale.Mask.Item.View}
-                      onClick={() => setEditingMaskId(m.id)}
-                    />
-                  ) : (
-                    <IconButton
-                      icon={<EditIcon />}
-                      text={Locale.Mask.Item.Edit}
-                      onClick={() => setEditingMaskId(m.id)}
-                    />
-                  )}
-                  {!m.builtin && (
-                    <IconButton
-                      icon={<DeleteIcon />}
-                      text={Locale.Mask.Item.Delete}
-                      onClick={async () => {
-                        if (await showConfirm(Locale.Mask.Item.DeleteConfirm)) {
-                          maskStore.delete(m.id);
-                        }
-                      }}
-                    />
-                  )}
+                  {/*{m.builtin ? (*/}
+                  {/*  <IconButton*/}
+                  {/*    icon={<EyeIcon />}*/}
+                  {/*    text={Locale.Mask.Item.View}*/}
+                  {/*    onClick={() => setEditingMaskId(m.id)}*/}
+                  {/*  />*/}
+                  {/*) : (*/}
+                  {/*  <IconButton*/}
+                  {/*    icon={<EditIcon />}*/}
+                  {/*    text={Locale.Mask.Item.Edit}*/}
+                  {/*    onClick={() => setEditingMaskId(m.id)}*/}
+                  {/*  />*/}
+                  {/*)}*/}
+                  {/*{!m.builtin && (*/}
+                  {/*  <IconButton*/}
+                  {/*    icon={<DeleteIcon />}*/}
+                  {/*    text={Locale.Mask.Item.Delete}*/}
+                  {/*    onClick={async () => {*/}
+                  {/*      if (await showConfirm(Locale.Mask.Item.DeleteConfirm)) {*/}
+                  {/*        maskStore.delete(m.id);*/}
+                  {/*      }*/}
+                  {/*    }}*/}
+                  {/*  />*/}
+                  {/*)}*/}
                 </div>
               </div>
             ))}
