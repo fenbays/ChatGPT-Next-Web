@@ -221,6 +221,8 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 };
 
 const openaiModels = [
+  "knowledge-chat",
+  "chat",
   "gpt-3.5-turbo",
   "gpt-3.5-turbo-1106",
   "gpt-3.5-turbo-0125",
@@ -237,8 +239,6 @@ const openaiModels = [
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
   "gpt-4-1106-preview",
-  "knowledge-chat",
-  "chat",
 ];
 
 const googleModels = [

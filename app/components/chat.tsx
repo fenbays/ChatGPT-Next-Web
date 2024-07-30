@@ -561,13 +561,13 @@ export function ChatActions(props: {
         icon={<PromptIcon />}
       />
 
-      <ChatAction
-        onClick={() => {
-          navigate(Path.Masks);
-        }}
-        text={Locale.Chat.InputActions.Masks}
-        icon={<MaskIcon />}
-      />
+      {/*<ChatAction*/}
+      {/*  onClick={() => {*/}
+      {/*    navigate(Path.Masks);*/}
+      {/*  }}*/}
+      {/*  text={Locale.Chat.InputActions.Masks}*/}
+      {/*  icon={<MaskIcon />}*/}
+      {/*/>*/}
 
       <ChatAction
         text={Locale.Chat.InputActions.Clear}
@@ -584,73 +584,73 @@ export function ChatActions(props: {
         }}
       />
 
-      <ChatAction
-        onClick={() => setShowModelSelector(true)}
-        text={currentModelName}
-        icon={<RobotIcon />}
-      />
+      {/*<ChatAction*/}
+      {/*  onClick={() => setShowModelSelector(true)}*/}
+      {/*  text={currentModelName}*/}
+      {/*  icon={<RobotIcon />}*/}
+      {/*/>*/}
 
-      {showModelSelector && (
-        <Selector
-          defaultSelectedValue={`${currentModel}@${currentProviderName}`}
-          items={models.map((m) => ({
-            title: `${m.displayName}${
-              m?.provider?.providerName
-                ? "(" + m?.provider?.providerName + ")"
-                : ""
-            }`,
-            value: `${m.name}@${m?.provider?.providerName}`,
-          }))}
-          onClose={() => setShowModelSelector(false)}
-          onSelection={(s) => {
-            if (s.length === 0) return;
-            const [model, providerName] = s[0].split("@");
-            chatStore.updateCurrentSession((session) => {
-              session.mask.modelConfig.model = model as ModelType;
-              session.mask.modelConfig.providerName =
-                providerName as ServiceProvider;
-              session.mask.syncGlobalConfig = false;
-            });
-            if (providerName == "ByteDance") {
-              const selectedModel = models.find(
-                (m) =>
-                  m.name == model && m?.provider?.providerName == providerName,
-              );
-              showToast(selectedModel?.displayName ?? "");
-            } else {
-              showToast(model);
-            }
-          }}
-        />
-      )}
+      {/*{showModelSelector && (*/}
+      {/*  <Selector*/}
+      {/*    defaultSelectedValue={`${currentModel}@${currentProviderName}`}*/}
+      {/*    items={models.map((m) => ({*/}
+      {/*      title: `${m.displayName}${*/}
+      {/*        m?.provider?.providerName*/}
+      {/*          ? "(" + m?.provider?.providerName + ")"*/}
+      {/*          : ""*/}
+      {/*      }`,*/}
+      {/*      value: `${m.name}@${m?.provider?.providerName}`,*/}
+      {/*    }))}*/}
+      {/*    onClose={() => setShowModelSelector(false)}*/}
+      {/*    onSelection={(s) => {*/}
+      {/*      if (s.length === 0) return;*/}
+      {/*      const [model, providerName] = s[0].split("@");*/}
+      {/*      chatStore.updateCurrentSession((session) => {*/}
+      {/*        session.mask.modelConfig.model = model as ModelType;*/}
+      {/*        session.mask.modelConfig.providerName =*/}
+      {/*          providerName as ServiceProvider;*/}
+      {/*        session.mask.syncGlobalConfig = false;*/}
+      {/*      });*/}
+      {/*      if (providerName == "ByteDance") {*/}
+      {/*        const selectedModel = models.find(*/}
+      {/*          (m) =>*/}
+      {/*            m.name == model && m?.provider?.providerName == providerName,*/}
+      {/*        );*/}
+      {/*        showToast(selectedModel?.displayName ?? "");*/}
+      {/*      } else {*/}
+      {/*        showToast(model);*/}
+      {/*      }*/}
+      {/*    }}*/}
+      {/*  />*/}
+      {/*)}*/}
 
-      <ChatAction
-        onClick={() => setShowPluginSelector(true)}
-        text={Locale.Plugin.Name}
-        icon={<PluginIcon />}
-      />
-      {showPluginSelector && (
-        <Selector
-          multiple
-          defaultSelectedValue={chatStore.currentSession().mask?.plugin}
-          items={[
-            {
-              title: Locale.Plugin.Artifacts,
-              value: Plugin.Artifacts,
-            },
-          ]}
-          onClose={() => setShowPluginSelector(false)}
-          onSelection={(s) => {
-            const plugin = s[0];
-            chatStore.updateCurrentSession((session) => {
-              session.mask.plugin = s;
-            });
-            if (plugin) {
-              showToast(plugin);
-            }
-          }}
-        />
-      )}
+      {/*<ChatAction*/}
+      {/*  onClick={() => setShowPluginSelector(true)}*/}
+      {/*  text={Locale.Plugin.Name}*/}
+      {/*  icon={<PluginIcon />}*/}
+      {/*/>*/}
+      {/*{showPluginSelector && (*/}
+      {/*  <Selector*/}
+      {/*    multiple*/}
+      {/*    defaultSelectedValue={chatStore.currentSession().mask?.plugin}*/}
+      {/*    items={[*/}
+      {/*      {*/}
+      {/*        title: Locale.Plugin.Artifacts,*/}
+      {/*        value: Plugin.Artifacts,*/}
+      {/*      },*/}
+      {/*    ]}*/}
+      {/*    onClose={() => setShowPluginSelector(false)}*/}
+      {/*    onSelection={(s) => {*/}
+      {/*      const plugin = s[0];*/}
+      {/*      chatStore.updateCurrentSession((session) => {*/}
+      {/*        session.mask.plugin = s;*/}
+      {/*      });*/}
+      {/*      if (plugin) {*/}
+      {/*        showToast(plugin);*/}
+      {/*      }*/}
+      {/*    }}*/}
+      {/*  />*/}
+      {/*)}*/}
     </div>
   );
 }
@@ -1330,11 +1330,11 @@ function _Chat() {
           )}
         </div>
 
-        <PromptToast
-          showToast={!hitBottom}
-          showModal={showPromptModal}
-          setShowModal={setShowPromptModal}
-        />
+        {/*<PromptToast*/}
+        {/*  showToast={!hitBottom}*/}
+        {/*  showModal={showPromptModal}*/}
+        {/*  setShowModal={setShowPromptModal}*/}
+        {/*/>*/}
       </div>
 
       <div
