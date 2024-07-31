@@ -541,9 +541,7 @@ export function ImagePreviewer(props: {
 
           <div>
             <div className={styles["main-title"]}>DotChat</div>
-            <div className={styles["sub-title"]}>
-              github.com/fenbays/DotChatWeb
-            </div>
+            <div className={styles["sub-title"]}>dotease.cn</div>
             <div className={styles["icons"]}>
               <ExportAvatar avatar={config.avatar} />
               <span className={styles["icon-space"]}>&</span>

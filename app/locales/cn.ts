@@ -574,11 +574,11 @@ const cn = {
     Sysmessage: "你是一个助手",
   },
   Mask: {
-    Name: "面具",
+    Name: "场景",
     Page: {
-      Title: "预设角色面具",
-      SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索角色面具",
+      Title: "预设角色场景",
+      SubTitle: (count: number) => `${count} 个预设场景定义`,
+      Search: "搜索角色场景",
       Create: "新建",
     },
     Item: {
