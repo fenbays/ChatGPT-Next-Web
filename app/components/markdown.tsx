@@ -174,17 +174,19 @@ function _MarkDownContent(props: { content: string }) {
   return (
     <ReactMarkdown
       remarkPlugins={[RemarkMath, RemarkGfm, RemarkBreaks]}
-      rehypePlugins={[
-        rehypeRaw,
-        RehypeKatex,
+      rehypePlugins={
         [
-          RehypeHighlight,
-          {
-            detect: false,
-            ignoreMissing: true,
-          },
-        ],
-      ]}
+          rehypeRaw,
+          RehypeKatex,
+          [
+            RehypeHighlight,
+            {
+              detect: false,
+              ignoreMissing: true,
+            },
+          ],
+        ] as any
+      }
       components={{
         pre: PreCode,
         p: (pProps) => <p {...pProps} dir="auto" />,
