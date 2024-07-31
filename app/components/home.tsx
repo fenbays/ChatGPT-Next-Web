@@ -29,7 +29,7 @@ import { useAppConfig } from "../store/config";
 import { AuthPage } from "./auth";
 import { getClientConfig } from "../config/client";
 import { type ClientApi, getClientApi } from "../client/api";
-import { useAccessStore } from "../store";
+import { useAccessStore, useChatStore } from "../store";
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
@@ -143,6 +143,7 @@ function Screen() {
   const config = useAppConfig();
   const location = useLocation();
   const navigate = useNavigate();
+  const chatStore = useChatStore();
   const isArtifact = location.pathname.includes(Path.Artifacts);
   const isHome = location.pathname === Path.Home;
   const isAuth = location.pathname === Path.Auth;
@@ -160,6 +161,7 @@ function Screen() {
   useEffect(() => {
     // 如果是移动设备并且当前路径是首页，则重定向到 /#/chat
     if (isMobileScreen && isHome) {
+      chatStore.newSession();
       navigate(Path.Chat);
     }
   }, []);
