@@ -47,10 +47,10 @@ const en: LocaleType = {
     },
     Commands: {
       new: "Start a new chat",
-      newm: "Start a new chat with mask",
+      // newm: "Start a new chat with mask",
       next: "Next Chat",
       prev: "Previous Chat",
-      clear: "Clear Context",
+      // clear: "Clear Context",
       del: "Delete Chat",
     },
     InputActions: {
