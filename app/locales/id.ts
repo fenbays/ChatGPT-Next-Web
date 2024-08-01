@@ -35,10 +35,10 @@ const id: PartialLocaleType = {
     },
     Commands: {
       new: "Mulai Chat Baru",
-      newm: "Mulai Chat Baru dengan Masks",
+      // newm: "Mulai Chat Baru dengan Masks",
       next: "Chat Selanjutnya",
       prev: "Chat Sebelumnya",
-      clear: "Bersihkan Percakapan",
+      // clear: "Bersihkan Percakapan",
       del: "Hapus Chat",
     },
     InputActions: {
@@ -369,8 +369,8 @@ const id: PartialLocaleType = {
   },
   Exporter: {
     Description: {
-      Title: "Hanya pesan setelah menghapus konteks yang akan ditampilkan"
-    },  
+      Title: "Hanya pesan setelah menghapus konteks yang akan ditampilkan",
+    },
     Model: "Model",
     Messages: "Pesan",
     Topic: "Topik",

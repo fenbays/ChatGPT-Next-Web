@@ -48,10 +48,10 @@ const sk: PartialLocaleType = {
     },
     Commands: {
       new: "Začať nový chat",
-      newm: "Začať nový chat s maskou",
+      // newm: "Začať nový chat s maskou",
       next: "Ďalší Chat",
       prev: "Predchádzajúci Chat",
-      clear: "Vymazať kontext",
+      // clear: "Vymazať kontext",
       del: "Vymazať Chat",
     },
     InputActions: {

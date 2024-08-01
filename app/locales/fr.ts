@@ -27,10 +27,10 @@ const fr: PartialLocaleType = {
     },
     Commands: {
       new: "Commencer une nouvelle conversation",
-      newm: "Démarrer une nouvelle conversation avec un assistant",
+      // newm: "Démarrer une nouvelle conversation avec un assistant",
       next: "Conversation suivante",
       prev: "Conversation précédente",
-      clear: "Effacer le contexte",
+      // clear: "Effacer le contexte",
       del: "Supprimer la Conversation",
     },
     InputActions: {
