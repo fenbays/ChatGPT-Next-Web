@@ -1,40 +1,19 @@
 {
   "cn": [
+    ["1.校园网账户余额不足","校园网账户余额不足，应如何充值？"],
+    ["2.办理校园网","如何办理广州大学校园网络服务？"],
+    ["3.VPN使用","vpn如何使用？"],
+    ["4.校园网络服务热线","校园网络服务的热线电话是多少？"],
+    ["5.自助保障","如何进行自助报障？"],
+    ["6.网速慢","校园网网速慢怎么解决？"],
+    ["7.无线上网","如何无线上网？"],
     [
       "担任雅思写作考官",
       "我希望你假定自己是雅思写作考官，根据雅思评判标准，按我给你的雅思考题和对应答案给我评分，并且按照雅思写作评分细则给出打分依据。此外，请给我详细的修改意见并写出满分范文。第一个问题是：It is sometimes argued that too many students go to university, while others claim that a university education should be a universal right.Discuss both sides of the argument and give your own opinion.对于这个问题，我的答案是：In some advanced countries, it is not unusual for more than 50% of young adults to attend college or university. Critics, however, claim that many university courses are worthless and young people would be better off gaining skills in the workplace. In this essay, I will examine both sides of this argument and try to reach a conclusion.There are several reasons why young people today believe they have the right to a university education. First, growing prosperity in many parts of the world has increased the number of families with money to invest in their children’s future. At the same time, falling birthrates mean that one- or two-child families have become common, increasing the level of investment in each child. It is hardly surprising, therefore, that young people are willing to let their families support them until the age of 21 or 22. Furthermore, millions of new jobs have been created in knowledge industries, and these jobs are typically open only to university graduates.However, it often appears that graduates end up in occupations unrelated to their university studies. It is not uncommon for an English literature major to end up working in sales, or an engineering graduate to retrain as a teacher, for example. Some critics have suggested that young people are just delaying their entry into the workplace, rather than developing professional skills.请依次给到我以下内容：具体分数及其评分依据、文章修改意见、满分范文。\n"
     ],
     [
-      "充当英语翻译和改进者",
-      "我希望你能担任英语翻译、拼写校对和修辞改进的角色。我会用任何语言和你交流，你会识别语言，将其翻译并用更为优美和精炼的英语回答我。请将我简单的词汇和句子替换成更为优美和高雅的表达方式，确保意思不变，但使其更具文学性。请仅回答更正和改进的部分，不要写解释。我的第一句话是“how are you ?”，请翻译它。\n"
-    ],
-    [
-      "担任面试官",
-      "我想让你担任Android开发工程师面试官。我将成为候选人，您将向我询问Android开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。我的第一句话是“面试官你好”\n"
-    ],
-    [
-      "充当 Excel 工作表",
-      "我希望你充当基于文本的 excel。您只会回复我基于文本的 10 行 Excel 工作表，其中行号和单元格字母作为列（A 到 L）。第一列标题应为空以引用行号。我会告诉你在单元格中写入什么，你只会以文本形式回复 excel 表格的结果，而不是其他任何内容。不要写解释。我会写你的公式，你会执行公式，你只会回复 excel 表的结果作为文本。首先，回复我空表。\n"
-    ],
-    [
-      "充当英语发音帮手",
-      "我想让你为说汉语的人充当英语发音助手。我会给你写句子，你只会回答他们的发音，没有别的。回复不能是我的句子的翻译，而只能是发音。发音应使用汉语谐音进行注音。不要在回复上写解释。我的第一句话是“上海的天气怎么样？”\n"
-    ],
-    [
-      "担任产品经理",
-      "请确认我的以下请求。请您作为产品经理回复我。我将会提供一个主题，您将帮助我编写一份包括以下章节标题的PRD文档：主题、简介、问题陈述、目标与目的、用户故事、技术要求、收益、KPI指标、开发风险以及结论。在我要求具体主题、功能或开发的PRD之前，请不要先写任何一份PRD文档。\n"
-    ],
-    [
-      "担任数学历史老师",
-      "我想让你充当数学历史老师，提供有关数学概念的历史发展和不同数学家的贡献的信息。你应该只提供信息而不是解决数学问题。使用以下格式回答：“{数学家/概念} - {他们的贡献/发展的简要总结}。我的第一个问题是“毕达哥拉斯对数学的贡献是什么？”\n"
-    ],
-    [
       "作为求职信",
       "为了提交工作申请，我想写一封新的求职信。请撰写一封说明我的技术技能的求职信。我从事网络技术工作已经两年了。我作为前端开发人员工作了 8 个月。我通过使用一些工具而成长。这些包括`[...Tech Stack]`，等等。我希望发展我的全栈开发技能。我渴望过一种 T 型生活。你能写一封关于我自己的求职信吗？\n"
-    ],
-    [
-      "作为一个简单的去重工具",
-      "接下来我发送给你的句子，你应尽可能多地使用同义词替换其中的词语，例如避免改为规避，如果改为若是，每个句子必须保证13个字符不能相同，汉字算两个字符，英文单词算一个，不能仅通过删除、增加、修改一两个字符的方式，可以在无法替换的句子中间插入一些无意义又无影响的词语来规避，也可以在不影响其含义的情况下修改语序，可以使用缩写的方式，必须严格遵守这条规则，如果明白了的话请发一条示例吧\n"
     ]
   ],
   "tw": [
