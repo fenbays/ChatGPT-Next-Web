@@ -2,19 +2,10 @@
   "cn": [
     ["1.校园网账户余额不足","校园网账户余额不足，应如何充值？"],
     ["2.办理校园网","如何办理广州大学校园网络服务？"],
-    ["3.VPN使用","vpn如何使用？"],
-    ["4.校园网络服务热线","校园网络服务的热线电话是多少？"],
-    ["5.自助保障","如何进行自助报障？"],
-    ["6.网速慢","校园网网速慢怎么解决？"],
-    ["7.无线上网","如何无线上网？"],
-    [
-      "担任雅思写作考官",
-      "我希望你假定自己是雅思写作考官，根据雅思评判标准，按我给你的雅思考题和对应答案给我评分，并且按照雅思写作评分细则给出打分依据。此外，请给我详细的修改意见并写出满分范文。第一个问题是：It is sometimes argued that too many students go to university, while others claim that a university education should be a universal right.Discuss both sides of the argument and give your own opinion.对于这个问题，我的答案是：In some advanced countries, it is not unusual for more than 50% of young adults to attend college or university. Critics, however, claim that many university courses are worthless and young people would be better off gaining skills in the workplace. In this essay, I will examine both sides of this argument and try to reach a conclusion.There are several reasons why young people today believe they have the right to a university education. First, growing prosperity in many parts of the world has increased the number of families with money to invest in their children’s future. At the same time, falling birthrates mean that one- or two-child families have become common, increasing the level of investment in each child. It is hardly surprising, therefore, that young people are willing to let their families support them until the age of 21 or 22. Furthermore, millions of new jobs have been created in knowledge industries, and these jobs are typically open only to university graduates.However, it often appears that graduates end up in occupations unrelated to their university studies. It is not uncommon for an English literature major to end up working in sales, or an engineering graduate to retrain as a teacher, for example. Some critics have suggested that young people are just delaying their entry into the workplace, rather than developing professional skills.请依次给到我以下内容：具体分数及其评分依据、文章修改意见、满分范文。\n"
-    ],
-    [
-      "作为求职信",
-      "为了提交工作申请，我想写一封新的求职信。请撰写一封说明我的技术技能的求职信。我从事网络技术工作已经两年了。我作为前端开发人员工作了 8 个月。我通过使用一些工具而成长。这些包括`[...Tech Stack]`，等等。我希望发展我的全栈开发技能。我渴望过一种 T 型生活。你能写一封关于我自己的求职信吗？\n"
-    ]
+    ["3.校园网络服务热线","校园网络服务的热线电话是多少？"],
+    ["4.自助保障","如何进行自助报障？"],
+    ["5.网速慢","校园网网速慢怎么解决？"],
+    ["6.无线上网","如何无线上网？"]
   ],
   "tw": [
   ],
